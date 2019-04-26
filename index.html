@@ -13,14 +13,14 @@
 
   <nav class="menu">
     <div class="flex-container">
-      <div class="menu-logo menu-logo-fixed"><a href="http://localhost:8888/201904%20gravy/">Mr. Gravy</a></div>
+      <div class="menu-logo menu-logo-fixed"><a href="/">Mr. Gravy</a></div>
       <div class="menu-items">
-        <ul>
-          <li><a href="#">Alles</a></li>
-          <li><a href="#" class="inactive">Sauzen</a></li>
-          <li><a href="#" class="inactive">Zuren</a></li>
-          <li><a href="#" class="inactive">Basics</a></li>
-          <li><a href="#" class="inactive">Drinken</a></li>
+        <ul id="recipeContainer">
+          <li><button class="btn active" onclick="filterSelection('all')">Alles</button></li>
+          <li><button class="btn" onclick="filterSelection('sauces')">Sauzen</button></li>
+          <li><button class="btn" onclick="filterSelection('sour')">Zuren</button></li>
+          <li><button class="btn" onclick="filterSelection('basics')">Basics</button></li>
+          <li><button class="btn" onclick="filterSelection('drinks')">Drinken</button></li>
         </ul>
       </div>
     </div>
@@ -30,8 +30,8 @@
 
   <div class="recipes">
     <div class="main-container">
-      <article class="recipe">
-        <a href="recipe.html" class="recipe-link" data-aos="fade-up">
+      <article class="recipe drinks">
+        <a href="recipe.html" class="recipe-link">
           <div class="">
             <div class="recipe-label">Drinken</div>
             <div class="recipe-title"><h2>Coldbrew Coffee</h2></div>
@@ -39,8 +39,8 @@
         </a>
         <div class="recipe-image" style="background-image: url(media/coldbrew.jpg);"></div>
       </article>
-      <article class="recipe">
-        <a href="recipe.html" class="recipe-link" data-aos="fade-up">
+      <article class="recipe sauces">
+        <a href="recipe.html" class="recipe-link">
           <div class="">
             <div class="recipe-label">Sauzen</div>
             <div class="recipe-title"><h2>Spicy Barbecue Sauce</h2></div>
@@ -48,8 +48,8 @@
         </a>
         <div class="recipe-image" style="background-image: url(media/bbq1.jpg);"></div>
       </article>
-      <article class="recipe">
-        <a href="recipe.html" class="recipe-link" data-aos="fade-up">
+      <article class="recipe basics">
+        <a href="recipe.html" class="recipe-link">
           <div class="">
             <div class="recipe-label">Basics</div>
             <div class="recipe-title"><h2>Belgische Mayonaise</h2></div>
@@ -57,8 +57,8 @@
         </a>
         <div class="recipe-image" style="background-image: url(media/coldbrew.jpg);"></div>
       </article>
-      <article class="recipe">
-        <a href="recipe.html" class="recipe-link" data-aos="fade-up">
+      <article class="recipe drinks">
+        <a href="recipe.html" class="recipe-link">
           <div class="">
             <div class="recipe-label">Drinken</div>
             <div class="recipe-title"><h2>Kombucha</h2></div>
@@ -66,8 +66,8 @@
         </a>
         <div class="recipe-image" style="background-image: url(media/bbq1.jpg);"></div>
       </article>
-      <article class="recipe">
-        <a href="recipe.html" class="recipe-link" data-aos="fade-up">
+      <article class="recipe sour">
+        <a href="recipe.html" class="recipe-link">
           <div class="">
             <div class="recipe-label">Zuren</div>
             <div class="recipe-title"><h2>Kimchi</h2></div>
@@ -75,8 +75,8 @@
         </a>
         <div class="recipe-image" style="background-image: url(media/coldbrew.jpg);"></div>
       </article>
-      <article class="recipe">
-        <a href="recipe.html" class="recipe-link" data-aos="fade-up">
+      <article class="recipe sauces">
+        <a href="recipe.html" class="recipe-link">
           <div class="">
             <div class="recipe-label">Sauzen</div>
             <div class="recipe-title"><h2>Griekse Tzaziki</h2></div>
@@ -84,8 +84,8 @@
         </a>
         <div class="recipe-image" style="background-image: url(media/coldbrew.jpg);"></div>
       </article>
-      <article class="recipe">
-        <a href="recipe.html" class="recipe-link" data-aos="fade-up">
+      <article class="recipe sauces">
+        <a href="recipe.html" class="recipe-link">
           <div class="">
             <div class="recipe-label">Sauzen</div>
             <div class="recipe-title"><h2>Bacon Jam</h2></div>
@@ -93,8 +93,8 @@
         </a>
         <div class="recipe-image" style="background-image: url(media/coldbrew.jpg);"></div>
       </article>
-      <article class="recipe">
-        <a href="recipe.html" class="recipe-link" data-aos="fade-up">
+      <article class="recipe sauces">
+        <a href="recipe.html" class="recipe-link">
           <div class="">
             <div class="recipe-label">Sauzen</div>
             <div class="recipe-title"><h2>Verse Knoflookboter</h2></div>
@@ -102,8 +102,8 @@
         </a>
         <div class="recipe-image" style="background-image: url(media/coldbrew.jpg);"></div>
       </article>
-      <article class="recipe">
-        <a href="recipe.html" class="recipe-link" data-aos="fade-up">
+      <article class="recipe sauces">
+        <a href="recipe.html" class="recipe-link">
           <div class="">
             <div class="recipe-label">Sauzen</div>
             <div class="recipe-title"><h2>Holy Guacamole</h2></div>
@@ -111,8 +111,8 @@
         </a>
         <div class="recipe-image" style="background-image: url(media/coldbrew.jpg);"></div>
       </article>
-      <article class="recipe">
-        <a href="recipe.html" class="recipe-link" data-aos="fade-up">
+      <article class="recipe sauces">
+        <a href="recipe.html" class="recipe-link">
           <div class="">
             <div class="recipe-label">Sauzen</div>
             <div class="recipe-title"><h2>Kneusjes Appelmoes</h2></div>
@@ -120,8 +120,8 @@
         </a>
         <div class="recipe-image" style="background-image: url(media/coldbrew.jpg);"></div>
       </article>
-      <article class="recipe">
-        <a href="recipe.html" class="recipe-link" data-aos="fade-up">
+      <article class="recipe basics">
+        <a href="recipe.html" class="recipe-link">
           <div class="">
             <div class="recipe-label">Basics</div>
             <div class="recipe-title"><h2>Witte Wijnazijn</h2></div>
@@ -132,6 +132,7 @@
     </div>
   </div>
 
+  <script src="js/filter.js"></script>
   <script src="js/aos.js"></script>
   <script>
     AOS.init();
