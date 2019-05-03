@@ -21,7 +21,7 @@ body, *{padding: 0; margin: 0; font-size: 16px;}
 
 p{
   font-family: futura-pt, sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   color: rgba(255,255,255, 1);
   font-size: 18px;
   line-height: 150%;
@@ -386,7 +386,7 @@ button.active{color: rgba(255,255,255,1) !important; transition: all 0.2s ease-i
 .recipe-content-ingredient li{margin-bottom: 12px;}
 .recipe-content-ingredient p{color: #1d1d1d;}
 .recipe-content-ingredient b{color: #1d1d1d; font-size: 18px;}
-.recipe-content-ingredient i{color: #1d1d1d !important; font-size: 18px; font-style: normal !important; font-weight: 300 !important; border: 2px solid rgba(21,21,21,0.1); padding: 3px 6px; margin-right: 6px;}
+/*.recipe-content-ingredient i{color: #1d1d1d !important; font-size: 18px; font-style: normal !important; font-weight: 400 !important; border: 2px solid rgba(21,21,21,0.1); padding: 3px 6px; margin-right: 6px;}*/
 
 @media only screen and (max-width: 1200px) {
   .recipe-content-ingredient{width: calc(40% - 40px);}
@@ -397,9 +397,28 @@ button.active{color: rgba(255,255,255,1) !important; transition: all 0.2s ease-i
 }
 
 .recipe-content-prepare{width: 66.66%; margin: 0;}
-.recipe-content-prepare p{color: #1d1d1d; margin-bottom: 20px;}
-.recipe-content-prepare b{color: #1d1d1d; font-size: 18px;}
-.recipe-content-prepare p i{color: #1d1d1d; font-size: 18px;}
+.recipe-content-prepare li{margin-bottom: 20px;}
+.recipe-content-prepare p{color: #1d1d1d; font-weight: 400;}
+.recipe-content-prepare p b{color: #1d1d1d; font-size: 18px; font-weight: 700;}
+.recipe-content-prepare p i{color: #1d1d1d; font-size: 18px; font-weight: 400; font-style: italic;}
+
+.recipe-content-prepare ol {
+  list-style: none;
+  counter-reset: my-awesome-counter;
+}
+.recipe-content-prepare ol li {
+  counter-increment: my-awesome-counter;
+}
+.recipe-content-prepare ol li::before {
+  content: "Stap " counter(my-awesome-counter);
+  font-family: futura-pt, sans-serif;
+  font-weight: 700;
+  color: rgba(255,255,255, 1);
+  line-height: 150%;
+  text-decoration: none;
+  letter-spacing: 0.4px;
+  color: #1d1d1d;;
+}
 
 @media only screen and (max-width: 1200px) {
   .recipe-content-prepare{width: 60%;}
