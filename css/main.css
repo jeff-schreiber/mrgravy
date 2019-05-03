@@ -383,9 +383,10 @@ button.active{color: rgba(255,255,255,1) !important; transition: all 0.2s ease-i
 
 .recipe-content-ingredient{width: calc(33.33% - 40px); margin: 0 40px 0 0;}
 .recipe-content-ingredient ul{list-style: none;}
-.recipe-content-ingredient li{margin-bottom: 5px;}
+.recipe-content-ingredient li{margin-bottom: 12px;}
 .recipe-content-ingredient p{color: #1d1d1d;}
 .recipe-content-ingredient b{color: #1d1d1d; font-size: 18px;}
+.recipe-content-ingredient i{color: #1d1d1d !important; font-size: 18px; font-style: normal !important; font-weight: 300 !important; border: 2px solid rgba(21,21,21,0.1); padding: 3px 6px; margin-right: 6px;}
 
 @media only screen and (max-width: 1200px) {
   .recipe-content-ingredient{width: calc(40% - 40px);}
@@ -505,3 +506,16 @@ button::-moz-focus-inner {
 }
 
 button:focus {outline:0;}
+
+.januari {background-color: #2E482E;}
+.februari {background-color: #2E482E;}
+.march {background-color: #2E482E;}
+.april {background-color: #2E482E;}
+.may {background-color: #2E482E;}
+.juni {background-color: #2E482E;}
+.juli {background-color: #2E482E;}
+.august {background-color: #2E482E;}
+.september {background-color: #2E482E;}
+.october {background-color: #2E482E;}
+.november {background-color: #2E482E;}
+.december {background-color: #2E482E;}
